@@ -1,0 +1,13 @@
+Ans->L2
+L2(2)->N
+L2(1)->O
+dim(L1)->R
+For(A,0,R/4-1)
+	If (N>L1(4A+1) and N<L1(4A+1)+L1(4A+3) and O>L1(4A+2) and O<L1(4A+2)+L1(4A+4))
+	Then
+		A+1->A
+		Return
+		Else
+		0->A
+	End
+End

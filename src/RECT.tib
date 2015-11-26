@@ -1,0 +1,33 @@
+ClrDraw
+{0,0,94,62,0,0,5,5,5,0,5,5,10,0,5,5}->L1
+1->M
+2->P
+3->G
+4->J
+dim(L1)->C
+(C/4)->Z
+While Z>0
+	(Z-1)->Z
+	L1(M)->S
+	L1(P)->T
+	L1(G)->W
+	L1(J)->H
+	(M+4)->M
+	(P+4)->P
+	(G+4)->G
+	(J+4)->J
+	S->U
+	T->V
+	For(B,0,1)
+		For(A,0,W)
+			Pxl-On(V,S+A)
+		End
+		T+H->V
+	End
+	For(B,0,1)
+		For(A,0,H)
+			Pxl-On(T+A,U)
+		End
+		S+W->U
+	End
+End

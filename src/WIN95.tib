@@ -1,0 +1,11 @@
+AxesOff
+ClrDraw
+{50,30}
+prgmCURSOR
+prgmRECT
+L2
+prgmCURSOR
+L2
+prgmCOLLIDE
+Ans->A
+Disp A

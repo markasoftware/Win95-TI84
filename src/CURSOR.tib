@@ -1,0 +1,41 @@
+Ans->L1
+L1(1)->O
+L1(2)->N
+While 1
+	getKey->C
+	If C!=0
+	Then
+		If F=0
+		Then
+			Pxl-Off(O,N)
+			Else
+			0->F
+		End
+	End
+	If C=24
+	Then
+		N-1->N
+	End
+	If C=25
+	Then
+		O-1->O
+	End
+	If C=26
+	Then
+		N+1->N
+	End
+	If C=34
+	Then
+		O+1->O
+	End
+	If (C=105)
+	Then
+		{O,N}->L2
+		Return
+	End
+	If C!=0
+	Then
+		pxl-Test(O,N)->F
+		Pxl-On(O,N)
+	End
+End
